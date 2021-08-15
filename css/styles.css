@@ -1,0 +1,655 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    
+}
+
+html {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+
+
+
+
+
+
+     /* Navbar */
+nav a {
+    color: white;
+}
+.navbar a img{    
+    width: 230px;    
+}
+.nav_btns a{
+    padding: 20px;
+}
+.navbar {     
+    z-index: 999;
+    letter-spacing: 2px;
+    padding: 15px;
+    border-bottom: 1px solid white;
+    
+}
+
+.navbar_scrl {    
+    padding: 2px !important; 
+    font-size: 12px;
+}
+
+.img_scrl {
+    width: 150px !important;
+}
+
+.navbtns_scrl {
+    padding: 10px !important;
+    font-size: 12px;
+}
+
+/* Alinear elementos de navbar */
+
+@media only screen and (min-width: 768px) {
+    .navbar .collapse {
+        margin-right: 40px;
+    }
+
+    .navbar .collapse a {
+        margin-left: 20px;
+    }
+    .navbar .collapse a:hover {
+        color: black;        
+    }
+
+    .nav_btns {
+        margin-right: 20px;
+    }
+
+    .navbar a img {
+        margin-left: 20px;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar a img {
+        width: 140px
+    }
+    .nav_btns a{
+    padding: 10px;
+    font-size: 10px;
+}
+}
+
+
+
+
+
+
+
+     /* Fondo */
+
+/* Pantalla ultra grande */
+@media only screen and (min-width: 1400px) {
+    main.content .inicio {
+        background-size: cover;
+        background-image: url("../img/fondo2.jpg");        
+        position: absolute;
+        top: 0px;
+        width: 100%;
+        height: 760px;
+    }
+
+}
+
+@media only screen and (max-width: 1400px) {
+    main.content .inicio {
+    background-image: url("../img/fondo2.jpg");    
+    background-size: contain;  
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 760px;    
+}    
+}
+
+/* Pantalla chica */
+@media only screen and (max-width: 768px){
+    main.content .inicio {
+        background-image: url("../img/fondo2_small.jpg"); 
+        background-size: cover;
+        background-position: center;        
+    }    
+
+    div.navbar-nav a {
+        margin-left: 0px;
+        color: #3977b1;
+    }
+
+    nav #btn_1,
+    #btn_2 {
+        border-bottom: 1px solid #3977b1;
+    }
+}
+
+
+
+
+
+
+
+
+
+    /* Pantalla inicial */
+
+/* Botón principal */
+
+div.inicio .main_button {
+    position: absolute;
+    top: 120px;
+    width: 45%; 
+    background-color: inherit;
+}
+
+div.inicio .main_button .container {
+    visibility: hidden;
+}
+
+div.inicio .main_button h1 {
+    visibility: visible;
+    letter-spacing: 3px;
+    font-size: 40px;
+    color: white;
+}
+div.inicio .main_button p {
+    font-size: 15px;
+    color: #D9D9D9;
+}
+div.inicio .main_button button {
+    letter-spacing: 2px;
+    padding: 15px;
+    color: #D9D9D9;    
+}
+
+/* Pantalla media */
+@media only screen and (max-width: 1280px) {
+
+    div.inicio .main_button {
+        top: 70px;
+        width: 60%;
+    }
+
+    div.inicio .main_button h1 {
+        letter-spacing: 2px;
+        font-size: 30px;
+    }
+}
+
+/* Pantalla chica */
+@media only screen and (max-width: 768px){ 
+    
+    div.inicio .main_button {
+        width: 80% !important;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 120px;
+        text-align: center;        
+        background-color: rgba(0,0,0,0.5);         
+    }     
+}
+
+
+
+
+    /*  Seccion proceso */
+
+
+
+section.proceso {
+    text-align: center;
+    letter-spacing: 2px;
+    margin-top: 800px;
+    margin-bottom: 100px;
+}
+
+/* Margen en pantalla media */
+@media only screen and (max-width: 1100px) {
+    section.proceso {        
+        margin-top: 600px;
+    }
+    div.pasos .imagenes .secciones .numero_odd, div.pasos .imagenes .secciones .numero {
+        display: none;
+    }   
+    
+}
+
+/* Margen en pantalla chica */
+@media only screen and (max-width: 768px) {
+    section.proceso {        
+        margin-top: 800px;
+    }
+    div.pasos h2 {
+        font-size: 40px !important;
+        visibility: visible !important;
+    }
+    
+    div.pasos .imagenes span{ 
+    visibility: visible !important;    
+}
+
+    div#estiloh2 {
+        margin-top: 21px !important;
+        width: 90% !important;
+    }
+    
+    div.pasos .imagenes .secciones p {
+        visibility: visible !important;
+    }
+    
+    #smile_img {
+        visibility: visible !important;
+    }
+    
+    
+    div.pasos .imagenes .secciones p:nth-child(even), div.pasos .imagenes .secciones p:nth-child(odd) {
+        font-size: 8px !important;
+        text-align: center !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        margin-top: auto !important;        
+    }
+    div.pasos .imagenes .secciones p:nth-child(even):before, div.pasos .imagenes .secciones p:nth-child(odd):before {
+        display: none;
+    }  
+    div.pasos .imagenes .secciones img {        
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }    
+   
+}
+
+div.pasos h2 {     
+    visibility: hidden;
+    font-size: 40px; 
+    margin-bottom: 50px;
+}
+div#estiloh2 {
+    background-color: #3a7fbf;    
+    z-index: -1;
+    position: absolute;
+    height: 15px;
+    width: 50%;
+    left: 0px;
+    right: 0px;
+    display: inline;
+    margin-top: 39px;
+}
+div.pasos .imagenes span{ 
+    visibility: hidden;
+    font-size: 20px;    
+    color: #9d9d9d;
+}
+
+/* Imagenes y parrafo */
+
+
+div.pasos .imagenes img { 
+    width: 120px;
+    max-height: 120px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;    
+}
+
+
+div.pasos .imagenes .secciones p:nth-child(even) {
+    visibility: hidden;
+    font-size: 10px;
+    font-weight: 100;
+    text-align: left;
+    margin-top: 15px;  
+    margin-left: 15px;
+    padding: 15px;
+    max-width: 370px;    
+    background: #245A8E;
+    color: white;
+    position: relative;    
+    border-radius: 10px;       
+}
+
+div.pasos .imagenes .secciones p:nth-child(even):before {
+      content: "";
+      position: absolute;
+      right: 100%;
+      top: 50px;
+      width: 0;
+      height: 0;
+      border-top: 13px solid transparent;
+      border-right: 26px solid #245A8E;
+      border-bottom: 13px solid transparent;
+}
+
+
+
+
+
+div.pasos .imagenes .secciones .numero {    
+    font-size: 100px;
+    font-weight: bold;
+    margin-left: 30px;
+    color: #3a7fbf;
+}
+
+div.pasos .imagenes .secciones p:nth-child(odd) {
+    visibility: hidden;
+    font-size: 10px;
+    font-weight: 100;
+    text-align: right;
+    margin-top: 15px;
+    padding: 15px; 
+    max-width: 370px;    
+    background: #9C1714;
+    color: white;
+    position: relative;    
+    border-radius: 10px;
+    margin-left: 55px;
+    margin-right: 20px
+}
+
+div.pasos .imagenes .secciones p:nth-child(odd):before {
+    content: "";
+    position: absolute;
+    left: 100%;
+    top: 50px;
+    width: 0;
+    height: 0;
+    border-top: 13px solid transparent;
+    border-left: 26px solid #9C1714;
+    border-bottom: 13px solid transparent;
+}
+
+div.pasos .imagenes .secciones .numero_odd {
+    font-size: 100px;
+    font-weight: bold;
+    margin-right: 30px;
+    color: #c33835;
+}
+
+
+div.pasos .separador {
+    width: 1px;
+    height: 80px;
+    background-color: #d9d9d9;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+/* Info */
+
+  /* Fondo fijo */  
+
+.background {
+    height: 385px;
+    width: 100%;
+    background-image: url("../img/office2.jpg");
+    background-size: cover;    
+    background-attachment: fixed;
+    position: absolute;
+    left: 0px;    
+    margin-top: 100px;
+    z-index: -1;    
+}
+
+  /* Menu azul */
+.right_back {
+    position: absolute;
+    height: 400px;
+    width: 50%;
+    right: 0px;    
+    background-size: contain;
+    background-image: linear-gradient(to right, #3a7fbf , #245A8E);
+    border-radius: 250px 0 0 250px;
+}
+
+section.info .d_left img {
+    width: 100%;
+} 
+
+section.info .d_right {    
+    padding: 35px;
+    margin-top: 65px;
+}
+section.info .d_right h3 {
+    color: #ABABAB;
+    float: right;    
+    font-size: 35px;
+    letter-spacing: 2px;
+}
+section.info .d_right p {    
+    font-size: 12px;
+    text-align: right;
+    letter-spacing: 1px;
+    width: 400px;
+    float: right;
+    color: #d9d9d9;
+}
+
+  /* Pantalla chica */
+@media only screen and (max-width: 1000px){
+    .background {
+        margin-top: 50px;
+        height: 263px
+    }
+
+    .right_back {
+        display: none;
+    }
+
+    section.info .d_left img {
+        width: 50%;
+        margin-left: 100px
+    }
+
+    section.info .d_right {
+        padding: 35px;
+        margin-top: 0px;
+        background-image: linear-gradient(to right, #3a7fbf , #245A8E);        
+    }
+    
+    section.info .d_right p {
+        font-size: 10px;
+        letter-spacing: 0px;
+        width: 100%;
+        float: left;
+        text-align: left;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .background {
+        margin-top: 50px;
+        height: 350px;
+    }      
+}
+
+@media only screen and (max-width: 984px) {
+    .background {
+        margin-top: 128px;        
+    }         
+}
+
+
+/* Preguntas frecuentes */
+
+div.acordeon {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+div.acordeon h3 {    
+    font-size: 30px;
+    letter-spacing: 2px;
+    color: #3a7fbf;
+    margin-bottom: 40px;
+}
+
+div.panel_contenido, div.panel_cabecera {
+    padding: 20px;    
+    width: 80%;
+    margin-left: auto !important;
+    margin-right: auto !important;
+} 
+
+
+
+   /* Cabecera de slide */
+
+div.panel_cabecera span {
+    letter-spacing: 2px;    
+}
+
+div.panel_cabecera img {
+    width: 20px;
+    float: right;
+    margin-top: 7px;
+    transition: all 0.5s ease;
+}
+
+div.panel_cabecera { 
+    color: #3a7fbf; 
+    cursor: pointer;    
+    border-bottom: 1px solid #3a7fbf;
+    transition: all 0.1s linear;
+}
+
+div.panel_cabecera:hover {
+    background-color: #2569A8;
+    color: white;
+}
+
+    /* Clases activas en click */
+
+.bg_cabecera {
+    background-color: #3a7fbf;
+    color: white !important;
+    border: none !important;
+}
+
+.img_rotate {
+    transform: rotate(180deg);
+}
+
+
+  /* Contenido de slide */
+
+div.panel_contenido {    
+    display: none;
+    text-align: left;
+    background-color: #3a7fbf;
+    color: white;
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-weight: 100;
+}
+
+
+
+
+
+
+/* Formulario y mapa */
+
+div.contacto {
+    background-image: linear-gradient(to left, #3a7fbf , #245A8E);
+    margin-top: 70px;  
+    margin-right: 0px;
+}
+
+  /* Formulario */
+
+div.contacto h3 {
+    color: white;
+    font-size: 30px;
+    text-align: center;    
+    padding: 10px;
+    letter-spacing: 2px;    
+}
+
+div.contacto form {
+    padding: 40px;
+}
+
+div.contacto form input {
+    margin-bottom: -12px;    
+}
+
+div.contacto form label {
+    color: #d9d9d9;
+    font-size: 11px;
+    letter-spacing: 2px;
+}
+
+#boton_submit {
+    width: 100%;
+    margin-top: 20px;
+    background-color: #c33835;
+    color: white;
+    letter-spacing: 3px;
+    font-size: 15px;
+    padding: 8px;
+}
+
+  /* Mapa */ 
+div.contacto iframe {        
+    padding: 20px;
+    width: 100%;
+    height: 400px;
+    margin: 5px;    
+        
+}
+
+
+/* Footer */
+
+div.footer {
+    margin: 50px;
+    text-align: center;    
+}
+div.footer img {
+    width: 130px;
+}
+div.footer span {
+    font-size: 8px;
+    letter-spacing: 1px;    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
